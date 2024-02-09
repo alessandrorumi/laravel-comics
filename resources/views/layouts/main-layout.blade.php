@@ -12,7 +12,7 @@
 <body>
 
     @include('components.header')
-    @include('components.jumbo')
+    @include('components.main')
     @yield('content')
     @include('components.footer')
 
