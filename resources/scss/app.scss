@@ -71,3 +71,74 @@ main {
     }
   }
 }
+
+// Footer
+.footer-top {
+  height: 400px;
+  background-image: url('../img/footer-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  font-size: .75rem;
+  padding: 1.5rem 6rem;
+
+  .footer-resources {
+    display: flex;
+
+    &>div {
+      margin-right: 1.5rem;
+
+      li {
+        line-height: 1.5rem;
+
+        a {
+          color: grey;
+        }
+      }
+    }
+  }
+
+  h3 {
+    color: #fff;
+    margin: .75rem 0;
+    font-size: 1.25rem;
+  }
+
+  .footer-logo-img {
+    img {
+      position: absolute;
+      right: 10rem;
+      top: -6rem;
+      z-index: 1;
+    }
+  }
+}
+
+.footer-bottom {
+  background-color: rgb(47, 47, 47);
+  position: relative;
+  z-index: 110;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .sign-up {
+    a {
+      color: #fff;
+      padding: .85rem;
+      border: 3px solid $primary;
+    }
+  }
+
+  .socials {
+    display: flex;
+    align-items: center;
+    height: 80px;
+
+    a {
+      color: $primary;
+      margin-right: 2rem;
+    }
+  }
+
+}
