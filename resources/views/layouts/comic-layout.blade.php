@@ -10,7 +10,7 @@
 <body>
 
     @include('components.header')
-    @include('components.main-comic')
+    @yield('content')
     @include('components.footer')
 
 </body>

@@ -4,11 +4,6 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
 
-    return view('pages.index');
-});
-
-Route::get('/comics', function () {
-
     $comics = [
         [
             "title" => "Action Comics #1000: The Deluxe Edition",
@@ -276,7 +271,7 @@ Route::get('/comics', function () {
         ]
         ];
 
-    return view('layouts.main-layout', compact("comics", "links"));
+    return view('pages.index', compact("comics", "links"));
 });
 
 Route::get('/comic', function () {
@@ -548,6 +543,6 @@ Route::get('/comic', function () {
         ]
         ];
 
-    return view('layouts.comic-layout', compact("comics", "links"));
+    return view('pages.comic', compact("comics", "links"));
 });
 

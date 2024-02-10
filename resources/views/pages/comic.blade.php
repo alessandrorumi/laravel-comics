@@ -1,3 +1,5 @@
+@extends('layouts.comic-layout')
+@section('content')
 <div class="comic-img">
   <img src="https://www.coverbrowser.com/image/action-comics/1-1.jpg" alt="">
 </div>
@@ -109,3 +111,4 @@
     </div>
   </div>
 </div>
+@endsection
