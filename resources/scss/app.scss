@@ -1,4 +1,16 @@
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bs-body-font-family: 'Bangers', monospace !important;
+  font-size: 18px;
+}
 
 ul {
   margin: 0;
@@ -9,21 +21,21 @@ ul {
   }
 }
 
+a {
+  color: grey;
+  text-decoration: none;
+}
+
 // Header
 header {
   height: 100px;
-  width: 80%;
+  padding: 0 6rem;
   margin: 0 auto;
 
   .logo {
     img {
       width: 75%;
     }
-  }
-
-  a {
-    color: grey;
-    text-decoration: none;
   }
 }
 
@@ -72,6 +84,36 @@ main {
   }
 }
 
+// Shop Icon
+.shop {
+  height: 150px;
+  background-color: rgb(0, 102, 255);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  position: relative;
+  z-index: 100;
+
+  &>div {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin: 1.75rem;
+
+    img {
+      height: 40%;
+      margin-right: .5rem;
+    }
+  }
+
+  .visa {
+    img {
+      width: 35%;
+    }
+  }
+}
+
 // Footer
 .footer-top {
   height: 400px;
@@ -115,11 +157,12 @@ main {
 }
 
 .footer-bottom {
+  padding: 0 6rem;
   background-color: rgb(47, 47, 47);
   position: relative;
   z-index: 110;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
 
   .sign-up {

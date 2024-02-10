@@ -9,8 +9,7 @@
 <body>
 
     @include('components.header')
-    @include('components.main')
-    @include('components.shop-icon')
+    <h1>TEST</h1>
     @include('components.footer')
 
 </body>

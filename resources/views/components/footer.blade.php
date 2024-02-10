@@ -14,7 +14,7 @@
             <li><a href="">News</a></li>
           </ul>
         </div>
-        <div class="shop">
+        <div class="f-shop">
           <h3>SHOPS</h3>
           <ul>
             <li><a href="">Shop DC</a></li>
@@ -54,7 +54,7 @@
       </div>
     </div>
     <div class="footer-logo-img">
-      <img src="../assets/img/dc-logo-bg.png" alt="">
+      <img src="{{ Vite::asset('/resources/img/dc-logo-bg.png') }}" alt="">
     </div>
   </div>
   <div class="footer-bottom">
