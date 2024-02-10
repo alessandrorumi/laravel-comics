@@ -183,5 +183,56 @@ main {
       margin-right: 2rem;
     }
   }
+}
 
+// SEZIONE COMIC SINGOLO
+.comic-img {
+  background-color: rgb(0, 102, 255);
+}
+
+.mc-container {
+  background-color: #fff;
+  font-size: .85rem;
+  width: 75%;
+  margin: 0 auto;
+  padding: 3rem 6rem;
+
+  .price-available {
+    background-color: #6dd47e;
+
+    .check {
+      border-left: 1px solid #fff;
+    }
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+}
+
+.authors-container {
+  background-color: whitesmoke;
+  position: relative;
+  z-index: 120;
+  min-height: 100px;
+
+  .auth-content {
+    width: 75%;
+    margin: 0 auto;
+    padding: 3rem 6rem;
+
+    .talent,
+    .specs {
+      font-size: .75rem;
+
+      .title {
+        width: 50%;
+        padding-right: 3rem;
+      }
+    }
+    
+    .talent {
+      margin-right: 4rem;
+    }
+  }
 }
