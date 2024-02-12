@@ -1,6 +1,8 @@
 <header class="d-flex align-items-center">
   <div class="logo">
-    <img src="{{ Vite::asset('/resources/img/dc-logo.png') }}" alt="">
+    <a href="/">
+      <img src="{{ Vite::asset('/resources/img/dc-logo.png') }}" alt="">
+    </a>
   </div>
     <nav class="flex-grow-1">
       <ul class="d-flex justify-content-center flex-grow-1">

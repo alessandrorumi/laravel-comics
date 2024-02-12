@@ -9,8 +9,8 @@
 <body>
 
     @include('components.header')
-    @include('components.main')
-    @include('components.shop-icon')
+    @yield('main')
+    @yield('shop-icon')
     @include('components.footer')
 
 </body>
