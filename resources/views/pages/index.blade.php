@@ -1,12 +1,12 @@
 @extends('layouts.main-layout')
-@section('main')
+@section('content')
   <main>
     <div class="container d-flex d-column">
       @foreach ($comics as $comic)
       <div class="item">
         <a href="/comic">
           <img src="{{ $comic['thumb'] }}" alt="">
-          <h5 class="d-flex mx-2">
+          <h5 class="text-center">
             {{ $comic['title'] }}
           </h5>
         </a>
@@ -17,9 +17,7 @@
       <a href="#">Load More</a>
     </div>
   </main>
-@endsection
 
-@section('shop-icon')
 <section>
     <div class="shop">
       <div class="digital-comics">
